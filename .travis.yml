@@ -1,5 +1,8 @@
 language: rust
 
+os:
+    - osx
+
 rust:
     - nightly
 
@@ -14,6 +17,11 @@ addons:
   apt:
     packages:
       - nasm
+
+before_install:
+    - brew update
+    - brew install nasm
+    - brew install binutils
 
 script:
     - make

@@ -13,7 +13,7 @@
 # limitations under the License.
 
 arch ?= x86_64
-target ?= $(arch)-unknown-linux-gnu
+target ?= $(arch)-apple-darwin
 kernel := build/kernel-$(arch).bin
 iso := build/os-$(arch).iso
 
